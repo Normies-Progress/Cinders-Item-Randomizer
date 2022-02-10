@@ -64,6 +64,8 @@ public:
 	virtual BOOL IsTome(DWORD dItemID);
 	virtual BOOL IsAffixedAccessory(DWORD dItemID);
 	virtual BOOL IsGauntletModeItem(DWORD dItemID);
+	virtual BOOL IsBoon(DWORD dItemID);
+	virtual BOOL IsMalus(DWORD dItemID);
 	virtual DWORD RandomiseNumber(DWORD dMin, DWORD dMax);
 	virtual DWORD RandomInteger(DWORD dMax);
 	virtual VOID DebugItemPrint(DWORD dOldItem, DWORD dOldQuantity, DWORD dItem, DWORD dQuantity);

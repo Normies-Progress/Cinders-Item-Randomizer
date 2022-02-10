@@ -1,6 +1,6 @@
 Credit to LukeYui for the original Randomiser. You can find it here: https://github.com/LukeYui/DS3-Item-Randomiser-OS
 
-Unzip the contents to your game directory, modifying the values in the randomizer preferences as desired. While setting a number higher than 2080 via the item order randomizer executable likely won't break it, it would be best to set it to the item count above.
+Unzip the contents to your game directory, modifying the values in the randomizer preferences as desired. While setting a number higher than 2148 via the item order randomizer executable likely won't break it, it would be best to set it to the item count above.
 
 Please note there may be bugs, as this is still a work in progress. Additionally, there may be some items that still need to be removed. If so, please make a note of the new item ID displayed in the debugger console.
 

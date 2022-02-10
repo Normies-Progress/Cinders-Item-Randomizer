@@ -14,6 +14,8 @@ DWORD pTomes[40];
 DWORD pGauntletModeItems[4];
 DWORD pAccessories[147];
 DWORD pAffixedAccessories[108];
+DWORD pBoons[35];
+DWORD pMaluses[36];
 
 VOID fItemRandomiser(UINT_PTR qWorldChrMan, UINT_PTR pItemBuffer, UINT_PTR pItemData, DWORD64 qReturnAddress) {
 
@@ -67,6 +69,8 @@ VOID CItemRandomiser::RandomiseItem(UINT_PTR qWorldChrMan, UINT_PTR pItemBuffer,
 		};
 		if (IsTome(dItemID)) return;
 		if (IsGauntletModeItem(dItemID)) return;
+		if (IsBoon(dItemID)) return;
+		if (IsMalus(dItemID)) return;
 
 		//if (CoreStruct->pItemArray[0] < dOffsetMax) {
 		//	//TEST
@@ -239,6 +243,28 @@ VOID CItemRandomiser::SortNewItem(DWORD* dItem, DWORD* dQuantity) {
 
 };
 
+
+BOOL CItemRandomiser::IsBoon(DWORD dItemID) {
+	int i = 0;
+
+	while (pBoons[i]) {
+		if (dItemID == pBoons[i]) return true;
+		i++;
+	};
+	return false;
+	
+};
+
+BOOL CItemRandomiser::IsMalus(DWORD dItemID) {
+	int i = 0;
+
+	while (pBoons[i]) {
+		if (dItemID == pMaluses[i]) return true;
+		i++;
+	};
+	return false;
+
+};
 
 BOOL CItemRandomiser::IsGauntletModeItem(DWORD dItemID) {
 	int i = 0;
@@ -1622,6 +1648,83 @@ extern DWORD pAccessories[147] = {
 	0x20007990,
 	0x2000799A,
 	0x20007E36,
+	0x00000000,
+};
+
+extern DWORD pBoons[35] = {
+	0x4000A028,
+	0x4000A029,
+	0x4000A02A,
+	0x4000A02B,
+	0x4000A02C,
+	0x4000A02D,
+	0x4000A02E,
+	0x4000A02F,
+	0x4000A030,
+	0x4000A031,
+	0x4000A032,
+	0x4000A033,
+	0x4000A034,
+	0x4000A035,
+	0x4000A036,
+	0x4000A037,
+	0x4000A038,
+	0x4000A039,
+	0x4000A03A,
+	0x4000A03B,
+	0x4000A03C,
+	0x4000A03D,
+	0x4000A03E,
+	0x4000A03F,
+	0x4000A040,
+	0x4000A041,
+	0x4000A042,
+	0x4000A043,
+	0x4000A044,
+	0x4000A045,
+	0x4000A046,
+	0x4000A047,
+	0x4000A048,
+	0x4000A049,
+	0x00000000,
+};
+
+extern DWORD pMaluses[36] = {
+	0x4000A410,
+	0x4000A411,
+	0x4000A412,
+	0x4000A413,
+	0x4000A414,
+	0x4000A415,
+	0x4000A416,
+	0x4000A417,
+	0x4000A418,
+	0x4000A419,
+	0x4000A41A,
+	0x4000A41B,
+	0x4000A41C,
+	0x4000A41D,
+	0x4000A41E,
+	0x4000A41F,
+	0x4000A420,
+	0x4000A421,
+	0x4000A422,
+	0x4000A423,
+	0x4000A424,
+	0x4000A425,
+	0x4000A426,
+	0x4000A427,
+	0x4000A428,
+	0x4000A429,
+	0x4000A42A,
+	0x4000A42B,
+	0x4000A42C,
+	0x4000A42D,
+	0x4000A42E,
+	0x4000A42D,
+	0x4000A42F,
+	0x4000A430,
+	0x4000A431,
 	0x00000000,
 };
 
