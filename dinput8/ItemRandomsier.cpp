@@ -4,12 +4,12 @@ extern CCore* Core;
 extern CItemRandomiser *ItemRandomiser;
 extern SCore* CoreStruct;
 DWORD pUniqueItems[45];
-DWORD pCappedItems[437];
-DWORD pSpecialWeapons[24];
+DWORD pCappedItems[436];
+DWORD pSpecialWeapons[32];
 DWORD pCovenantItems[21];
 DWORD pShields[83];
 DWORD pCatalysts[47];
-DWORD pWeapons[379];
+DWORD pWeapons[375];
 DWORD pTomes[40];
 DWORD pGauntletModeItems[4];
 DWORD pAccessories[147];
@@ -475,7 +475,7 @@ extern DWORD pUniqueItems[45] = {
 	0x00000000,
 };
 
-extern DWORD pCappedItems[437] = {
+extern DWORD pCappedItems[436] = {
 	0x4000013B,
 	0x40000181,
 	0x40000179,
@@ -917,7 +917,7 @@ extern DWORD pCappedItems[437] = {
 	0x00000000,
 };
 
-extern DWORD pSpecialWeapons[24] = {
+extern DWORD pSpecialWeapons[32] = {
 	// FRIEDE'S GREAT SCYTHE
 	0x009B55A0,
 	// BOWS
@@ -930,6 +930,9 @@ extern DWORD pSpecialWeapons[24] = {
 	// GREATBOWS
 	0x00D614B0, 0x00D7C260, 0x00D85EA0, 0x00D8FAE0,
 	0x00D85EA0,
+	// SIDEARMS
+	0x00DBBA00, 0x00DBE110,0x00DC0820, 0x00DC2F30,
+	0x00DC5640, 0x00DC7D50, 0x00DCA460, 0x00DCCB70,
 	// END
 	0x00000000,
 };
@@ -1096,7 +1099,7 @@ extern DWORD pCatalysts[47] = {
 
 };
 
-extern DWORD pWeapons[379] = {
+extern DWORD pWeapons[375] = {
 	0x000F4240,
 	0x000F6950,
 	0x000F9060,
@@ -1297,13 +1300,9 @@ extern DWORD pWeapons[379] = {
 	0x00D8D3D0,
 	0x00D8FAE0,
 	0x00D921F0,
-	0x00DBBA00,
-	0x00DBE110,
 	0x00DC0820,
-	0x00DC2F30,
 	0x00DC5640,
 	0x00DC7D50,
-	0x00DCA460,
 	0x00DCCB70,
 	0x00F42400,
 	0x00F47220,
