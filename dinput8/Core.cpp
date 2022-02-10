@@ -12,7 +12,7 @@ DWORD64 rAutoEquip = 0;
 DWORD64 rNoWeaponRequirements = 0;
 DWORD64 rEquipLock = 0;
 //HARDCODED LIST
-DWORD pItemArrList[2148];
+DWORD pItemArrList[2147];
 
 VOID CCore::Start() {
 
@@ -340,7 +340,7 @@ VOID CCore::DebugInit() {
 	return;
 };
 
-extern DWORD pItemArrList[2148] = {
+extern DWORD pItemArrList[2147] = {
 
 	//AMMO
 	0x00061A80,
@@ -2506,7 +2506,6 @@ extern DWORD pItemArrList[2148] = {
 	0x4000A42C,
 	0x4000A42D,
 	0x4000A42E,
-	0x4000A42D,
 	0x4000A42F,
 	0x4000A430,
 	0x4000A431,

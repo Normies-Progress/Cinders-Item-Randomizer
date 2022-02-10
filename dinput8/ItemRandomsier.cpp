@@ -15,7 +15,7 @@ DWORD pGauntletModeItems[4];
 DWORD pAccessories[147];
 DWORD pAffixedAccessories[108];
 DWORD pBoons[35];
-DWORD pMaluses[36];
+DWORD pMaluses[35];
 
 VOID fItemRandomiser(UINT_PTR qWorldChrMan, UINT_PTR pItemBuffer, UINT_PTR pItemData, DWORD64 qReturnAddress) {
 
@@ -1693,7 +1693,7 @@ extern DWORD pBoons[35] = {
 	0x00000000,
 };
 
-extern DWORD pMaluses[36] = {
+extern DWORD pMaluses[35] = {
 	0x4000A410,
 	0x4000A411,
 	0x4000A412,
@@ -1725,7 +1725,6 @@ extern DWORD pMaluses[36] = {
 	0x4000A42C,
 	0x4000A42D,
 	0x4000A42E,
-	0x4000A42D,
 	0x4000A42F,
 	0x4000A430,
 	0x4000A431,
