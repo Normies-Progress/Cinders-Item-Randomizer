@@ -137,6 +137,7 @@ VOID CItemRandomiser::RandomiseItem(UINT_PTR qWorldChrMan, UINT_PTR pItemBuffer,
 			};
 		};
 
+		// Check is done here to ensure the new random item isn't one that should be randomized
 
 		if ((dItemID == 0x4000085D) || (dItemID == 0x4000085F)) {
 			if (!CoreStruct->dRandomsieHealItems) dItemID = 0x400001F4;
@@ -149,6 +150,9 @@ VOID CItemRandomiser::RandomiseItem(UINT_PTR qWorldChrMan, UINT_PTR pItemBuffer,
 			if (IsCovenantItem(dItemID)) dItemID = 0x400001F4;
 		};
 		if (IsTome(dItemID)) {
+			dItemID = 0x400001F4;
+		};
+		if (IsMalus(dItemID) || IsBoon(dItemID)) {
 			dItemID = 0x400001F4;
 		};
 
