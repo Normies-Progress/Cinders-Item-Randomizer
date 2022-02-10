@@ -4,16 +4,16 @@ extern CCore* Core;
 extern CItemRandomiser *ItemRandomiser;
 extern SCore* CoreStruct;
 DWORD pUniqueItems[45];
-DWORD pCappedItems[439];
+DWORD pCappedItems[437];
 DWORD pSpecialWeapons[24];
-DWORD pCovenantItems[22];
+DWORD pCovenantItems[21];
 DWORD pShields[83];
 DWORD pCatalysts[47];
 DWORD pWeapons[379];
 DWORD pTomes[40];
 DWORD pGauntletModeItems[4];
-DWORD pAccessories[161];
-DWORD pAffixedAccessories[109];
+DWORD pAccessories[147];
+DWORD pAffixedAccessories[108];
 
 VOID fItemRandomiser(UINT_PTR qWorldChrMan, UINT_PTR pItemBuffer, UINT_PTR pItemData, DWORD64 qReturnAddress) {
 
@@ -475,7 +475,7 @@ extern DWORD pUniqueItems[45] = {
 	0x00000000,
 };
 
-extern DWORD pCappedItems[439] = {
+extern DWORD pCappedItems[437] = {
 	0x4000013B,
 	0x40000181,
 	0x40000179,
@@ -612,7 +612,6 @@ extern DWORD pCappedItems[439] = {
 	0x4024AAB8,
 	0x4024B288,
 	0x4024B670,
-	0x4024C610,
 	0x4024C9F8,
 	0x4024ED20,
 	0x4024F108,
@@ -677,7 +676,6 @@ extern DWORD pCappedItems[439] = {
 	0x40358338,
 	0x40358720,
 	0x40358B08,
-	0x40359AA8,
 	0x4035B600,
 	0x4035B9E8,
 	0x4035DD10,
@@ -875,7 +873,6 @@ extern DWORD pCappedItems[439] = {
 	0x40001533,
 	0x40001534,
 	0x40001535,
-	0x40001536,
 	0x40001540,
 	0x4000154A,
 	0x40001554,
@@ -937,7 +934,7 @@ extern DWORD pSpecialWeapons[24] = {
 	0x00000000,
 };
 
-extern DWORD pCovenantItems[22] = {
+extern DWORD pCovenantItems[21] = {
 	0x4000016D,
 	0x4000016E,
 	0x4000016F,
@@ -950,7 +947,6 @@ extern DWORD pCovenantItems[22] = {
 	0x4000017B,
 	0x4000017D,
 	0x4000017E,
-	0x40000FAE,
 	0x40000FAF,
 	0x40000FB0,
 	0x40000424,
@@ -1482,23 +1478,15 @@ extern DWORD pWeapons[379] = {
 	0x01E42950
 };
 
-extern DWORD pAccessories[161] = {
+extern DWORD pAccessories[147] = {
 	0x20000066,
-	0x20000067,
-	0x2000006B,
-	0x2000006F,
 	0x2000007C,
 	0x2000007D,
 	0x20000080,
-	0x20000082,
-	0x20000085,
 	0x20000086,
-	0x20000089,
-	0x2000008A,
 	0x2000008B,
 	0x2000008C,
 	0x2000008F,
-	0x20000091,
 	0x20000095,
 	0x20004E20,
 	0x20004E2A,
@@ -1522,7 +1510,6 @@ extern DWORD pAccessories[161] = {
 	0x20004EDE,
 	0x20004EE8,
 	0x20004EF2,
-	0x20004EFC,
 	0x20004F06,
 	0x20004F10,
 	0x20004F1A,
@@ -1579,8 +1566,6 @@ extern DWORD pAccessories[161] = {
 	0x20007576,
 	0x20007580,
 	0x2000758A,
-	0x20007594,
-	0x2000759E,
 	0x200075B2,
 	0x200075DA,
 	0x200075E4,
@@ -1598,7 +1583,6 @@ extern DWORD pAccessories[161] = {
 	0x200076CA,
 	0x200076D4,
 	0x200076DE,
-	0x200076E8,
 	0x200076F2,
 	0x20007724,
 	0x2000772E,
@@ -1607,8 +1591,6 @@ extern DWORD pAccessories[161] = {
 	0x2000774C,
 	0x20007760,
 	0x2000776A,
-	0x20007774,
-	0x200077B0,
 	0x200077BA,
 	0x200077C4,
 	0x200077CE,
@@ -1630,9 +1612,7 @@ extern DWORD pAccessories[161] = {
 	0x200078FA,
 	0x20007904,
 	0x2000790E,
-	0x20007918,
 	0x20007922,
-	0x2000792C,
 	0x20007936,
 	0x20007940,
 	0x2000794A,
@@ -1646,7 +1626,7 @@ extern DWORD pAccessories[161] = {
 	0x00000000,
 };
 
-extern DWORD pAffixedAccessories[109] = {
+extern DWORD pAffixedAccessories[108] = {
 	0x200078DC,
 	0x200077C4,
 	0x200077CE,
@@ -1702,7 +1682,6 @@ extern DWORD pAffixedAccessories[109] = {
 	0x2000790E,
 	0x20007918,
 	0x20007922,
-	0x2000792C,
 	0x20007936,
 	0x20007940,
 	0x20007724,

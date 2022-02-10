@@ -5,9 +5,9 @@ extern CAutoEquip* AutoEquip;
 extern SCore* CoreStruct;
 
 DWORD dRingSlotSelect = 0x11;
-DWORD pHelmetList[241];
-DWORD pBodyList[195];
-DWORD pHandsList[181];
+DWORD pHelmetList[238];
+DWORD pBodyList[194];
+DWORD pHandsList[180];
 DWORD pLegsList[183];
 
 VOID fAutoEquip(UINT_PTR pItemBuffer, DWORD64 pItemData, DWORD64 qReturnAddress) {
@@ -194,7 +194,7 @@ VOID CAutoEquip::LockUnlockEquipSlots(int iIsUnlock) {
 	return;
 };
 
-extern DWORD pHelmetList[241]{
+extern DWORD pHelmetList[238]{
 
 	0x1098BD90,
 	0x1098E4A0,
@@ -260,7 +260,6 @@ extern DWORD pHelmetList[241]{
 	0x11E84800,
 	0x11F78A40,
 	0x12625A00,
-	0x1263E0A0,
 	0x12656740,
 	0x129020C0,
 	0x129F6300,
@@ -295,9 +294,7 @@ extern DWORD pHelmetList[241]{
 	0x13C8EEE0,
 	0x13D09000,
 	0x13D83120,
-	0x13DFD240,
 	0x13EF1480,
-	0x13FE56C0,
 	0x1405F7E0,
 	0x140D9900,
 	0x14153A20,
@@ -440,7 +437,7 @@ extern DWORD pHelmetList[241]{
 
 };		  //All in-game headwear
 
-extern DWORD pBodyList[195]{
+extern DWORD pBodyList[194]{
 
 	0x1098C178,
 	0x1098E888,
@@ -499,7 +496,6 @@ extern DWORD pBodyList[195]{
 	0x11E84BE8,
 	0x11F78E28,
 	0x12625DE8,
-	0x129024A8,
 	0x129F66E8,
 	0x12A70808,
 	0x12AEA928,
@@ -640,7 +636,7 @@ extern DWORD pBodyList[195]{
 
 };		  //All in-game chestpieces
 
-extern DWORD pHandsList[181]{
+extern DWORD pHandsList[180]{
 
 	0x1098C560,
 	0x1098EC70,
@@ -692,7 +688,6 @@ extern DWORD pHandsList[181]{
 	0x11D90D90,
 	0x11E84FD0,
 	0x11F79210,
-	0x126261D0,
 	0x129F6AD0,
 	0x12AEAD10,
 	0x12BDEF50,
