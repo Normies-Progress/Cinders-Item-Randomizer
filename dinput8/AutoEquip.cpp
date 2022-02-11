@@ -7,8 +7,8 @@ extern SCore* CoreStruct;
 DWORD dRingSlotSelect = 0x11;
 DWORD pHelmetList[238];
 DWORD pBodyList[194];
-DWORD pHandsList[180];
-DWORD pLegsList[183];
+DWORD pHandsList[181];
+DWORD pLegsList[182];
 
 VOID fAutoEquip(UINT_PTR pItemBuffer, DWORD64 pItemData, DWORD64 qReturnAddress) {
 	if (*(int*)(pItemData) >= 0) AutoEquip->AutoEquipItem(pItemBuffer, qReturnAddress);
@@ -587,7 +587,7 @@ extern DWORD pBodyList[194]{
 	0x15EB3688,
 	0x15EB5D98,
 	0x15EB84A8,
-	0x15EBD6B0,
+	
 	0x15EC20E8,
 	0x15EC9618,
 	0x15ECBD28,
@@ -632,11 +632,12 @@ extern DWORD pBodyList[194]{
 	0x10A06298,
 	0x10A089A8,
 	0x10A0B0B8,
+	0x13F6B988,
 	0x00000000,
 
 };		  //All in-game chestpieces
 
-extern DWORD pHandsList[180]{
+extern DWORD pHandsList[181]{
 
 	0x1098C560,
 	0x1098EC70,
@@ -817,10 +818,11 @@ extern DWORD pHandsList[180]{
 		0x10A08D90,
 		0x10A09178,
 		0x10A0B4A0,
+		0x15EBD6B0,
 	0x00000000,
 };
 
-extern DWORD pLegsList[183]{
+extern DWORD pLegsList[182]{
 
 	0x1098C948,
 	0x1098F058,
@@ -901,7 +903,6 @@ extern DWORD pLegsList[183]{
 	0x13C8FA98,
 	0x13D09BB8,
 	0x13D83CD8,
-	0x13F6B988,
 	0x13F6C158,
 	0x14060398,
 	0x140DA4B8,

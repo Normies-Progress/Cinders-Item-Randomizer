@@ -3,8 +3,8 @@
 extern CCore* Core;
 extern CItemRandomiser *ItemRandomiser;
 extern SCore* CoreStruct;
-DWORD pUniqueItems[45];
-DWORD pCappedItems[436];
+DWORD pUniqueItems[60];
+DWORD pCappedItems[430];
 DWORD pSpecialWeapons[32];
 DWORD pCovenantItems[21];
 DWORD pShields[83];
@@ -12,7 +12,7 @@ DWORD pCatalysts[47];
 DWORD pWeapons[375];
 DWORD pTomes[40];
 DWORD pGauntletModeItems[4];
-DWORD pAccessories[147];
+DWORD pAccessories[144];
 DWORD pAffixedAccessories[108];
 DWORD pBoons[35];
 DWORD pMaluses[35];
@@ -62,7 +62,7 @@ VOID CItemRandomiser::RandomiseItem(UINT_PTR qWorldChrMan, UINT_PTR pItemBuffer,
 			if (IsGameProgressionItem(dItemID)) return;
 		};
 		if (!CoreStruct->dRandomsieHealItems) { //User preference "RandomiseEstusMaterials"
-			if ((dItemID == 0x4000085D ) || (dItemID == 0x400001F4)) return;
+			if ((dItemID == 0x4000085D ) || (dItemID == 0x4000085F)) return;
 		};
 		if (!CoreStruct->dRandomiseCovenantItems) { //User preference "RandomCovenantDrops"
 			if (IsCovenantItem(dItemID)) return;
@@ -474,7 +474,7 @@ extern DWORD pTomes[40] = {
 };
 
 
-extern DWORD pUniqueItems[45] = {
+extern DWORD pUniqueItems[60] = {
 	0x400000BF,	0x006132D0,	0x40000836,	0x400007D8,
 	0x40000859,	0x400007DA,	0x40000846,	0x40000845,
 	0x4000083C,	0x400007DC,	0x400007DE,	0x4000086C,
@@ -501,17 +501,31 @@ extern DWORD pUniqueItems[45] = {
 	0x200027B0,
 	0x200027BA,
 	0x200027C4,
+	// SPELLBOOKS
+	0x4000084F,
+	0x40000850,
+	0x40000851,
+	0x40000852,
+	0x40000853,
+	0x40000854,
+	0x40000855,
+	0x40000856,
+	0x4000085B,
+	// COAL
+	0x40000837,
+	0x40000838,
+	0x40000839,
+	0x4000083A,
+	// OTHER
+	0x4000085A,
+	0x400007E0,
 	//END
 	0x00000000,
 };
 
-extern DWORD pCappedItems[436] = {
+extern DWORD pCappedItems[430] = {
 	0x4000013B,
 	0x40000181,
-	0x40000179,
-	0x4000017A,
-	0x40000183,
-	0x40000184,
 	0x4000015F,
 	0x40000186,
 	0x400001EA,
@@ -536,14 +550,12 @@ extern DWORD pCappedItems[436] = {
 	0x400003EB,
 	0x400002D5,
 	0x400007D1,
-	0x400007D3,
 	0x400007D4,
 	0x400007D5,
 	0x400007D7,
 	0x400007D8,
 	0x400007D9,
 	0x400007DA,
-	0x400007DB,
 	0x400007DC,
 	0x400007DD,
 	0x400007DE,
@@ -571,13 +583,11 @@ extern DWORD pCappedItems[436] = {
 	0x40000856,
 	0x4000085A,
 	0x4000085B,
-	0x4000085C,
 	0x4000085D,
 	0x4000085E,
 	0x4000085F,
 	0x40000860,
 	0x40000861,
-	0x40000869,
 	0x4000086B,
 	0x4000086C,
 	0x4000086E,
@@ -839,7 +849,6 @@ extern DWORD pCappedItems[436] = {
 	0x400007D2,
 	0x400007D4,
 	0x400007D6,
-	0x400007E6,
 	0x40000837,
 	0x40000838,
 	0x40000839,
@@ -1507,12 +1516,10 @@ extern DWORD pWeapons[375] = {
 	0x01E42950
 };
 
-extern DWORD pAccessories[147] = {
+extern DWORD pAccessories[144] = {
 	0x20000066,
-	0x2000007C,
 	0x2000007D,
 	0x20000080,
-	0x20000086,
 	0x2000008B,
 	0x2000008C,
 	0x2000008F,
@@ -1595,7 +1602,6 @@ extern DWORD pAccessories[147] = {
 	0x20007576,
 	0x20007580,
 	0x2000758A,
-	0x200075B2,
 	0x200075DA,
 	0x200075E4,
 	0x200075EE,
