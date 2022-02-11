@@ -9,3 +9,4 @@ If key item randomization is enabled, please be aware the odds of picking up a k
 Use the Item Order Randomiser.exe to generate new seeds, use New and then Custom List, entering 1900 for the item number. The item list is built into the .dll, meaning the Data_Item_List.txt doesn't need to be configured.
 
 Updated to 2.15
+Repo: https://github.com/Normies-Progress/Cinders-Item-Randomizer
